@@ -1,0 +1,25 @@
+package com.meroafno.springsecurity.bonus.config;
+
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+public class MyServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+	@Override
+	protected Class<?>[] getRootConfigClasses() {
+		
+		return null;
+	}
+
+	@Override
+	protected Class<?>[] getServletConfigClasses() {
+		
+		return new Class[] { javaconfig.class };
+	}
+
+	@Override
+	protected String[] getServletMappings() {
+		
+		return new String[] {"/"};
+	}
+
+}
